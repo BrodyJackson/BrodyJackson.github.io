@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="627px" height="450px" viewBox="0 0 627 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="385.901654 0.116025572 157.842435 100.572851 240.914896 149.756691 388.928694 188.290329 174.568941 196.41133 167.421989 217.514317 141.920473 240.936818 155.473254 254.165115 194.331377 271.780619 345.870054 403.174591 482.326872 286.142389 378.965402 395.568068 495.792938 388.756389 440.06833 443.921836 518.141296 424.938505 596.127565 326.196215 625 369.090591 624.042116 0.729434508"></polygon>
+        <filter x="-3.1%" y="-1.8%" width="104.1%" height="104.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-5" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="383.319114 1.32506347 506.027571 121.748795 452.372069 152.050307 405.144026 132.634581 399.810035 116.405914 350.270596 112.72546 378.060688 32.17331 375.758182 8.26369644"></polygon>
+        <filter x="-1.3%" y="-1.3%" width="102.6%" height="102.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="158.624754 100.559516 399.86782 117.917211 417.678904 184.560981 390.248857 189.517147 241.62165 150.41455"></polygon>
+        <filter x="-0.8%" y="-2.2%" width="101.5%" height="104.5%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="220.294577 293.418842 483.4517 219.309286 540.538491 197.980412 218.045411 224.134747 197.545106 254.458484"></polygon>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-1.2%" y="-4.2%" width="102.3%" height="108.4%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="5" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-10" points="540.118268 264.353731 601.275337 220.910806 601.275337 312.82053 523.87343 349.309517 518.539439 333.08085 454.2925 374.2439 508.413075 301.630763 540.118268 291.844198"></polygon>
+        <filter x="-1.4%" y="-1.3%" width="102.7%" height="102.6%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-12" points="89.9851595 298.952021 97.5233744 285.43715 111.814094 292.163354 112.13298 317.089104"></polygon>
+        <filter x="-29.7%" y="-42.9%" width="200.0%" height="166.8%" filterUnits="objectBoundingBox" id="filter-13">
+            <feGaussianBlur stdDeviation="0.964370955 1.96656038" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50.0%" y="-57.1%" width="240.6%" height="195.2%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="5" dy="-3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-15" points="112.481454 351.160652 145.034181 355.493564 143.314824 386.994294 86.5891823 361.065859"></polygon>
+        <filter x="-8.8%" y="-36.6%" width="132.9%" height="150.9%" filterUnits="objectBoundingBox" id="filter-16">
+            <feGaussianBlur stdDeviation="0.810291473 1.50309311" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-16.5%" y="-49.2%" width="148.3%" height="176.0%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="5" dy="-4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-18" points="0.958801961 326 31 335.033932 0.805415457 344.536359"></polygon>
+        <filter x="-16.6%" y="-64.8%" width="166.3%" height="208.0%" filterUnits="objectBoundingBox" id="filter-19">
+            <feGaussianBlur stdDeviation="0.917127799 1.39720328" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-33.2%" y="-91.8%" width="199.4%" height="262.0%" filterUnits="objectBoundingBox" id="filter-20">
+            <feOffset dx="5" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.451256793">
+        <g id="Desktop-HD" transform="translate(-813.000000, 0.000000)">
+            <g id="Group-3" transform="translate(815.000000, -1.000000)">
+                <g id="Path-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FF823A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Path-5">
+                    <use fill="#EB692A" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                </g>
+                <g id="Path-3">
+                    <use fill="#C47431" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                </g>
+                <g id="Path-4" filter="url(#filter-8)">
+                    <use fill="#5C7BA4" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-7"></use>
+                </g>
+                <g id="Path-5">
+                    <use fill="#EB692A" fill-rule="evenodd" xlink:href="#path-10"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                </g>
+                <g id="Path-6" filter="url(#filter-13)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-12"></use>
+                    <use fill="#C38484" fill-rule="evenodd" xlink:href="#path-12"></use>
+                </g>
+                <g id="Path-7" filter="url(#filter-16)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-15"></use>
+                    <use fill="#BB4747" fill-rule="evenodd" xlink:href="#path-15"></use>
+                </g>
+                <g id="Path-8" filter="url(#filter-19)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-20)" xlink:href="#path-18"></use>
+                    <use fill-opacity="0.415279665" fill="#71EFAC" fill-rule="evenodd" xlink:href="#path-18"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
