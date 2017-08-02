@@ -471,9 +471,12 @@ a {
     }
     #links{
         align-self: flex-start;
-        margin-left: 8%;
-        padding-top: 3%;
-
+        width: 100%;
+        justify-content: space-around;
+        padding: 3% 4% 0% 4%;
+    }
+    #links p{
+        margin-right: 0;
     }
     .head{
         flex-direction: column;
@@ -612,6 +615,10 @@ a {
     }
     #send-input{
         width: 20%;
-        margin-left: 75%; 
+        margin-left: 75%;
+    }
+
+    #section-4{
+        height: 620px;
     }
 }
