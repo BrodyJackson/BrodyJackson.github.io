@@ -479,7 +479,7 @@ a {
         flex-direction: column;
     }
     .random-graphic{
-        width: 75%;
+        width: 100%;
         top: 0;
     }
     .random-graphic2{
@@ -590,5 +590,28 @@ a {
     }
     #larger-text{
         font-size: 14px;
+    }
+
+
+
+
+    #contact-container{
+        width: 90%;
+    }
+
+    #email-input{
+        width: 50%;
+    }
+
+    #message-input{
+        height: 150px;
+    }
+
+    .general-input{
+        height: 35px;
+    }
+    #send-input{
+        width: 20%;
+        margin-left: 75%; 
     }
 }
