@@ -150,8 +150,8 @@ a {
   width: 27%;
   height: 170%;
   overflow: hidden;
-  transition: width 2s, height 4s;
-  -webkit-transition: width 2s, height 4s;
+  /*transition: width 2s, height 4s;
+  -webkit-transition: width 2s, height 4s;*/
 }
 .skillsText-shrink /*basically the exact same as above, I should try and figure out some sort of way to clean this */
 {
@@ -165,8 +165,8 @@ a {
   height: 20%;
   margin-right: 4%;
   overflow: hidden;
-  transition: width 2s, height 4s;
-  -webkit-transition: width 2s, height 4s;
+  /*transition: width 2s, height 4s;
+  -webkit-transition: width 2s, height 4s;*/
 }
 .skillsText p
 {
@@ -191,12 +191,12 @@ a {
   height: 40px;
   width: 40px;
   margin: 0 auto;
-  transition: margin 1s ease-in-out;
+  /*transition: margin 1s ease-in-out;*/
 }
 
 .workedWith-message{
   opacity: 1;
-  transition: opacity 1s linear;
+  /*transition: opacity 1s linear;*/
 
 }
 .workedWith-message-dissapear{
@@ -221,7 +221,7 @@ a {
   width: 25%;
   height: 25%;
   opacity: 1;
-  transition: opacity 1s linear;
+  /*transition: opacity 1s linear;*/
 }
 
 
@@ -230,7 +230,7 @@ a {
   /*width: 20%;*/
   height: 10%;
   opacity: 1;
-  transition: opacity 1s linear;
+  /*transition: opacity 1s linear;*/
 }
 
 #socialRow1{
@@ -243,7 +243,7 @@ a {
   width: 25%;
   height: 25%;
   opacity: 1;
-  transition: opacity 1s linear;
+  /*transition: opacity 1s linear;*/
 }
 .skillImages-dissapear
 {
