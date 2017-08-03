@@ -460,7 +460,7 @@ a {
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 900px){
 
     #message{
         font-size: 12px;
@@ -565,7 +565,6 @@ a {
         height: 850px;
     }
     #secondRow1{
-        margin-bottom: 200px; 
     }
 
 
