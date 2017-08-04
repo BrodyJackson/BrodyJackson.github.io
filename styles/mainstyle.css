@@ -538,7 +538,7 @@ a {
     .skillImages2{
         /*height: 30%;*/
         width: 20%;
-        max-height: 90px; 
+        max-height: 90px;
     }
     #secondRow1{
         margin-top: 30px;
@@ -607,7 +607,7 @@ a {
     }
 
     #email-input{
-        width: 50%;
+        width: 55%;
     }
 
     #message-input{
