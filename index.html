@@ -1,132 +1,56 @@
-<!DOCTYPE = HTML>
+<!DOCTYPE html>
 <html>
+   
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Book List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- google font links -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-<head>
-  <title> Brody Jackson </title>
-  <link rel="stylesheet" href = "styles/mainstyle.css"></link>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <div class = "random-graphic">
-    <img class = "random-graphic" src = "images/graphic2.svg">
-  </div>
-  <div class = "random-graphic2">
-    <img class = "random-graphic2" src = "images/things.svg">
-  </div>
-
-  <div class = "head flexbox-container">
-    <div id= "message">
-      <p>Brody Jackson</p>
-      <p>Student, Developer, and Mildly Interesting Person</p>
-    </div>
-    <div class = "flexbox-container" id = "links">
-      <p><a href="#anchor1">Skills</a></p>
-      <p><a href="#anchor2">Projects</a></p>
-      <!-- <p><a href=''>Resume</a></p> -->
-      <p><a href="#anchor3">Contact</a></p>
-    </div>
-  </div>
-  <div class = "welcomeMessage flexbox-container">
-    <h1 class="sectionTitle">Hello!</h1>
-    <p id="text1" class = "bigMessageStyle">I’m Currently a student at the University of Calgary,
-where I am pursuing degrees in Computer Science and Biology.</p>
-    <p id="text2" class = "bigMessageStyle">I work on Front-End developement projects at White Whale Analytics,
-and spend my time creating things that I find interesting. </p>
-  </div>
-
-<a id="anchor1"></a>
-  <div id = "section-2-background">
-    <div class = "section-two-image-background">
-        <!-- <img class = "section-two-image-background" src = "images/skillsThing.svg"> -->
-    </div>
-    <div class = "whatICanDo flexbox-container">
-      <h2 class = "sectionTitle" id="whatIDoTitle">ABOUT</h2>
-        <div class = "flexbox-container moreAbout">
-          <div class = "social flexbox-container">
-            <a  class = "anchorTag" href = "https://www.linkedin.com/in/brody-jackson-801a04133/"><img class = 'socialImages' src = "images/linkedin.svg"></a>
-            <a  class = "anchorTag"href = "https://github.com/BrodyJackson"><img class = 'socialImages' src = "images/github.svg"></a>
-            <a class = "anchorTag" href = "https://www.instagram.com/brodyjacks0n/"> <img class = 'socialImages' src = "images/instagram.svg"></a>
-            <a  class = "anchorTag" href = "https://www.facebook.com/brody.jackson.7"><img class = 'socialImages' src = "images/facebook.svg"></a>
-          </div>
-          <div id = "content" class = "flexbox-container">
-            <div class = "skillsText flexbox-container" id = "greatAt">
-              <div id = "topRow1" class = "flexbox-container">
-                <p id="paraOne" class="workedWith-message">I've Worked With ...</p>
-                <img  class = "minus" id="minusPic1" src = "images/minus.svg">
-              </div>
-              <div id = "secondRow1" class = "flexbox-container">
-                <img class = 'skillImages' src = "images/java.svg">
-                <img class = 'skillImages' src = "images/c++.svg">
-                <img class = 'skillImages' src = "images/html.svg">
-                <img class = 'skillImages' src = "images/javascript.svg">
-                <img class = 'skillImages' src = "images/css.svg">
-                <img class = 'skillImages' src = "images/python.svg">
-              </div>
-              <div id = "thirdRow1" class = "flexbox-container">
-              </div>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" /> 
+    </head>
+    <body>
+        <nav class="topNav">
+            <div class="buttons">
+                <ul class="navButtons">
+                    <li id="underline">Home</li>
+                    <li><a href="thisYear.html">2019</a></li>
+                    <li><a href="lastYear.html">2018</a></li>
+                    <li><a href="toRead.html">To Read</a></li>
+                </ul>
             </div>
-            <div class = "skillsText flexbox-container" id="interested">
-              <div id = "topRow2" class ="flexbox-container">
-                <p id = "paraTwo" class = "workedWith-message">I'm Interested In ...</p>
-                <img class = "minus" id = "minusPic2" src = "images/minus.svg">
-              </div>
-              <div id = "secondRow2" class = "flexbox-container">
-                <img class = 'skillImages2' src = "images/react.svg">
-                <img class = 'skillImages2' src = "images/redux.svg">
-                <img class = 'skillImages2' src = "images/mongo.svg">
-                <img class = 'skillImages2' src = "images/angular.svg">
-                <img class = 'skillImages2' src = "images/jquery.svg">
-                <img class = 'skillImages2' src = "images/sass.svg">
-              </div>
-              <div id = "thirdRow2" class = "flexbox-container">
-              </div>
+        </nav>
+        <div class="wrapper">
+            <div class="hero">
+                <h1 class="title">Book History</h1>
+                <i class="fas fa-long-arrow-alt-down iconDown"></i>
             </div>
-          </div>
+            <div class="flexRow" id="secondRow">
+                <div class="yearBox" id="year2019" onClick="location.href='thisYear.html';" style="cursor: pointer;">
+                    <p class="subTitle">Books of 2019</p>
+                </div>
+                <div class="yearBox" id="year2018" onClick="location.href='lastYear.html';" style="cursor: pointer;">
+                    <p class="subTitle">Books of 2018</p>
+                </div>
+            </div>
+            <div class="flexRow" id="thirdRow">
+                <div class="flexRow currentlyReading">
+                    <div id="bookImage"></div>
+                    <div id="currentDescription">
+                        <p id="readingTitle" class="subTitle">Currently Reading</p>
+                        <p class="smallText">Originally published in 1854, Walden; or, Life in the Woods, is a vivid account of the time that Henry D. Thoreau lived alone in a secluded cabin at Walden Pond. It is one of the most influential and compelling books in American literature and the ideal presentation of Thoreau's great document of social criticism and dissent.</p>
+                    </div>
+                </div>
+                <div class= "flexColumn readingList" onClick="location.href='toRead.html';" style="cursor: pointer;">
+                    <p class="future">Up Next</p>
+                    <i class=" arrow fas fa-arrow-right"></i>
+                </div>
+            </div>
         </div>
-    </div>
-  </div>
-
-
-  <a id="anchor2"></a>
-  <div id = "section-3" class = "flexbox-container">
-    <h2 class = "sectionTitle" id = "workTitle"></h2>
-    <div  id = "projects-container" class = "flexbox-container">
-      <div id="project1" class = "project">
-        <img src = "images/white-whale.png"  class = "project-background" id = "WW-image">
-        <div class = "text-description">
-            <p class = "text-transition">I am currently an intern at White Whale Analytics, a startup specializing in machine learning solutions for business. I spend most of my time working on front-end tasks, and work mostly with React.js </p>
-        </div>
-      </div>
-      <div id="project2" class = "project">
-        <img src = "images/mario.png"  class = "project-background" id="mario-image">
-        <div class = "text-description">
-            <p class = "text-transition">I recently build a clone of classic Super Mario using ARM v8 assembly language. The project was done on a Rapsberry Pi 2, with the help of a custom build NES controller driver.</p>
-        </div>
-      </div>
-      <div id="project3" class = "project">
-        <img src = "images/pexels-programming.png" class = "project-background" id="courses-image">
-        <div class = "text-description">
-            <p class = "text-transition"><span id="larger-text">Some of my recent courserwork</span><br><br>Algorithms and Data Structures<br>Computability<br>Computer Hardware<br>Databases<br>Networks<br></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <a id="anchor3"></a>
-  <div id = "section-4" class = "flexbox-container">
-    <h2 class = "sectionTitle" id = "contact-title"> CONTACT </h2>
-    <div  id = "contact-container" class = "flexbox-container">
-        <form id = "email-form" method = "POST" action ="https://formspree.io/brodyjackson1@gmail.com">
-            <input name = "name" class = "general-input" id = "name-input" type = "text" placeholder = " Name"></input>
-            <input name = "email" class = "general-input" id = "email-input" type = "email" placeholder = " Please enter your email"></input>
-            <textarea name = "message" class = "general-input" id = "message-input" type = "textarea" placeholder = " Message"></textarea>
-            <input name = "send" class = "general-input" id = "send-input" type = "submit" value = "Send"></input>
-        </form>
-    </div>
-  </div>
-
-  <!-- <script src = 'togglebox1.js'></script>
-  <script src = 'togglebox2.js'></script> -->
-</body>
+    </body>
+ 
 </html>
