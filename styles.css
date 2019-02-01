@@ -5,6 +5,9 @@
     box-sizing: border-box; 
 }
 
+html{
+    height:auto;
+}
 .topNav{
     margin: 0% 5%; 
     height: 15vh;
@@ -199,7 +202,7 @@ a{
 #bookContainer{
     /* margin-top: 10vh;  */
     flex-wrap: wrap; 
-    margin-bottom: 20vh;  
+    margin-bottom: 10vh;  
 }  
 
 #book12019{
@@ -207,11 +210,11 @@ a{
 }
 
 #book22019{
-    background-image: url(https://images.pexels.com/photos/3478/church-cathedral-catholic-christianity.jpg?cs=srgb&dl=cathedral-catholic-christianity-3478.jpg&fm=jpg);
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/81L39uBd%2BvL.jpg);
 }
 
 #book32019{ 
-    background-image: url(https://images.pexels.com/photos/373488/pexels-photo-373488.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); 
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/518yp2iabGL._SX321_BO1,204,203,200_.jpg); 
 }
 
 #book42019{ 
@@ -240,6 +243,28 @@ a{
 }
 
 #book52018{
+    background-image:url(https://images-na.ssl-images-amazon.com/images/I/81AHYi-h3HL.jpg); 
+}
+
+#book62018{
+    background-image:url(https://kbimages1-a.akamaihd.net/6b84549c-2e16-42d8-9463-906a1897b750/1200/1200/False/we-were-soldiers-once-and-young.jpg); 
+}
+
+
+#book72018{
+    background-image:url(https://images-na.ssl-images-amazon.com/images/I/91bdye%2B2WvL.jpg); 
+}
+
+#book82018{
+    background-image:url(https://s3-us-west-2.amazonaws.com/tabs.web.media/b/h/bhyr/bhyr-square-orig.jpg); 
+}
+
+#book92018{
+    background-image:url(https://s3.amazonaws.com/libapps/accounts/98723/images/1984.png); 
+}
+
+#book102018{
+    background-image:url(https://www.ynharari.com/wp-content/uploads/2017/01/Kopertina-Homo-Deus-pg.jpg); 
 }
     
 #book42019Descrip{
@@ -333,6 +358,9 @@ tr:hover {
     }
     .subTitle{
         font-size: 1em; 
+    }
+    .stayBig{
+        font-size:2em; 
     }
     .small{
         margin-top:9vh; 
