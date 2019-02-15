@@ -1,56 +1,103 @@
-<!DOCTYPE html>
-<html>
-   
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Book List</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- google font links -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container rounded mb-0">
+        <div class="row mt-2 morePadding">
+            <div class="alert alert-secondary col-12 infoScreen" role="alert">
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" /> 
-    </head>
-    <body>
-        <nav class="topNav">
-            <div class="buttons">
-                <ul class="navButtons">
-                    <li id="underline">Home</li>
-                    <li><a href="thisYear.html">2019</a></li>
-                    <li><a href="lastYear.html">2018</a></li>
-                    <li><a href="toRead.html">To Read</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="wrapper">
-            <div class="hero">
-                <h1 class="title">Book History</h1>
-                <i class="fas fa-long-arrow-alt-down iconDown"></i>
-            </div>
-            <div class="flexRow" id="secondRow">
-                <div class="yearBox" id="year2019" onClick="location.href='thisYear.html';" style="cursor: pointer;">
-                    <p class="subTitle stayBig">Books of 2019</p>
-                </div>
-                <div class="yearBox" id="year2018" onClick="location.href='lastYear.html';" style="cursor: pointer;">
-                    <p class="subTitle stayBig">Books of 2018</p>
-                </div>
-            </div>
-            <div class="flexRow" id="thirdRow">
-                <div class="flexRow currentlyReading">
-                    <div id="bookImage"></div>
-                    <div id="currentDescription">
-                        <p id="readingTitle" class="subTitle">Currently Reading</p>
-                        <p class="smallText">Originally published in 1854, Walden; or, Life in the Woods, is a vivid account of the time that Henry D. Thoreau lived alone in a secluded cabin at Walden Pond. It is one of the most influential and compelling books in American literature and the ideal presentation of Thoreau's great document of social criticism and dissent.</p>
-                    </div>
-                </div>
-                <div class= "flexColumn readingList" onClick="location.href='toRead.html';" style="cursor: pointer;">
-                    <p class="future">Up Next</p>
-                    <i class=" arrow fas fa-arrow-right"></i>
-                </div>
             </div>
         </div>
-    </body>
- 
+        <div class="row mt-2">
+            <div class="col-3 button" id="bracket-left">
+                <button type="button" class="btn btn-secondary btn-block">(</button>
+            </div>
+            <div class="col-3 button"id="bracket-right">
+                <button type="button" class="btn btn-secondary btn-block">)</button>
+            </div>
+            <div class="col-3 button" id="divide">
+                <button type="button" class="btn btn-secondary btn-block">%</button>
+            </div>
+            <div class="col-3 button" id="clear">
+                <button type="button" class="btn btn-secondary btn-block">CE</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-3 button" id="bracket-left">
+                <button type="button" class="btn btn-light btn-block">7</button>
+            </div>
+            <div class="col-3 button"id="bracket-right">
+                <button type="button" class="btn btn-light btn-block">8</button>
+            </div>
+            <div class="col-3 button" id="divide">
+                <button type="button" class="btn btn-light btn-block">9</button>
+            </div>
+            <div class="col-3 button" id="clear">
+                <button type="button" class="btn btn-secondary btn-block">/</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-3 button" id="bracket-left">
+                <button type="button" class="btn btn-light btn-block">4</button>
+            </div>
+            <div class="col-3 button"id="bracket-right">
+                <button type="button" class="btn btn-light btn-block">5</button>
+            </div>
+            <div class="col-3 button" id="divide">
+                <button type="button" class="btn btn-light btn-block">6</button>
+            </div>
+            <div class="col-3 button" id="clear">
+                <button type="button" class="btn btn-secondary btn-block">X</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-3 button" id="bracket-left">
+                <button type="button" class="btn btn-light btn-block">1</button>
+            </div>
+            <div class="col-3 button"id="bracket-right">
+                <button type="button" class="btn btn-light btn-block">2</button>
+            </div>
+            <div class="col-3 button" id="divide">
+                <button type="button" class="btn btn-light btn-block">3</button>
+            </div>
+            <div class="col-3 button" id="clear">
+                <button type="button" class="btn btn-secondary btn-block">-</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-3 button" id="bracket-left">
+                <button type="button" class="btn btn-light btn-block">0</button>
+            </div>
+            <div class="col-3 button"id="bracket-right">
+                <button type="button" class="btn btn-light btn-block">.</button>
+            </div>
+            <div class="col-3 button" id="divide">
+                <button type="button" class="btn btn-primary btn-block">=</button>
+            </div>
+            <div class="col-3 button" id="clear">
+                <button type="button" class="btn btn-secondary btn-block">+</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas class="background"></canvas>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="jquery.particleground.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="calcs.js"></script>
+
+  </body>
 </html>
