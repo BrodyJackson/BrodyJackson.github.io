@@ -68,10 +68,15 @@ $(".button").on("click", function (e){
                 firstZeroClicked = false; 
             }
         }
-        else{ 
-            currentString += test;     
+        else if((resetFlag == true) && (test != "+") && (test != "-") && (test != "*") && (test != "%") && (test != "/") && (test != "(") && (test != ")")){
+            currentString = test;
+            console.log("test");
+            resetFlag = false; 
+        } 
+        else{
+            currentString += test; 
+            resetFlag = false;     
         }
-        
     }
     //update the view
     update(currentString)
