@@ -1,0 +1,50 @@
+html{
+    min-width: 1280px;
+    max-width: 1280px;
+    min-height: 720px;
+    overflow: hidden ;
+    overflow-y:scroll;
+    font-family: 'Poppins', sans-serif;
+    color: #38003C;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.svgContainer {
+    /*display: inline-block;*/
+    /*position: relative;*/
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: visible;
+}
+
+#zoom{
+    transition:opacity 1s linear;
+}
+
+#myChart{
+    position:absolute;
+    left:32%;
+    top:60%;
+    opacity: 0;
+    height: 400px !important;
+    width: 400px !important;
+}
+#vis {
+    position:absolute;
+    background: #FFFFFF;
+    display: inline-block;
+    width:100%;
+    overflow: visible;
+    top:40%;
+    left:16%;
+    /*width: 100%;*/
+    /*!*height: 300%;*!*/
+    /*min-width: 800px;*/
+    /*min-height: 500px;*/
+    /*box-sizing: border-box;*/
+    /*margin: auto;*/
+}

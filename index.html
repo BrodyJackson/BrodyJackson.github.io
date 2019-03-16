@@ -1,103 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Calculator</title>
-  </head>
-  <body>
-    <div class="container rounded mb-0">
-        <div class="row mt-2 morePadding">
-            <div class="alert alert-secondary col-12 infoScreen" role="alert">
+<head>
+    <meta charset="UTF-8">
+    <title>Premier League Performance</title>
+    <link rel="stylesheet" type="text/css" href="mainStyles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script type="text/javascript" src="performance_spending.js"></script>
+    <script src="d3-hexjson.min.js"></script>
 
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-3 button" id="bracket-left">
-                <button type="button" class="btn btn-secondary btn-block">(</button>
-            </div>
-            <div class="col-3 button"id="bracket-right">
-                <button type="button" class="btn btn-secondary btn-block">)</button>
-            </div>
-            <div class="col-3 button" id="divide">
-                <button type="button" class="btn btn-secondary btn-block">%</button>
-            </div>
-            <div class="col-3 button" id="clear">
-                <button type="button" class="btn btn-secondary btn-block">CE</button>
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-3 button" id="bracket-left">
-                <button type="button" class="btn btn-light btn-block">7</button>
-            </div>
-            <div class="col-3 button"id="bracket-right">
-                <button type="button" class="btn btn-light btn-block">8</button>
-            </div>
-            <div class="col-3 button" id="divide">
-                <button type="button" class="btn btn-light btn-block">9</button>
-            </div>
-            <div class="col-3 button" id="clear">
-                <button type="button" class="btn btn-secondary btn-block">/</button>
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-3 button" id="bracket-left">
-                <button type="button" class="btn btn-light btn-block">4</button>
-            </div>
-            <div class="col-3 button"id="bracket-right">
-                <button type="button" class="btn btn-light btn-block">5</button>
-            </div>
-            <div class="col-3 button" id="divide">
-                <button type="button" class="btn btn-light btn-block">6</button>
-            </div>
-            <div class="col-3 button" id="clear">
-                <button type="button" class="btn btn-secondary btn-block">X</button>
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-3 button" id="bracket-left">
-                <button type="button" class="btn btn-light btn-block">1</button>
-            </div>
-            <div class="col-3 button"id="bracket-right">
-                <button type="button" class="btn btn-light btn-block">2</button>
-            </div>
-            <div class="col-3 button" id="divide">
-                <button type="button" class="btn btn-light btn-block">3</button>
-            </div>
-            <div class="col-3 button" id="clear">
-                <button type="button" class="btn btn-secondary btn-block">-</button>
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-3 button" id="bracket-left">
-                <button type="button" class="btn btn-light btn-block">0</button>
-            </div>
-            <div class="col-3 button"id="bracket-right">
-                <button type="button" class="btn btn-light btn-block">.</button>
-            </div>
-            <div class="col-3 button" id="divide">
-                <button type="button" class="btn btn-primary btn-block">=</button>
-            </div>
-            <div class="col-3 button" id="clear">
-                <button type="button" class="btn btn-secondary btn-block">+</button>
-            </div>
-        </div>
-    </div>
 
-    <canvas class="background"></canvas>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="jquery.particleground.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-    <script src="calcs.js"></script>
+</head>
+<body>
+<h1>Are They Worth It?</h1>
+<h2>Player Spending VS Team Performance in the Premier League</h2>
 
-  </body>
+
+<div class="svgContainer">
+
+    <svg id="vis" class="svg_boxes">
+
+    </svg>
+    <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+
+</body>
+
 </html>
