@@ -27,11 +27,12 @@ h1,h2{
 
 #myChart{
     position:absolute;
-    left:30%;
-    top:48%;
+    left:30vw;
+    top:49vh;
     opacity: 0;
-    height: 475px !important;
-    width: 475px !important;
+    /*height: 475px !important;*/
+    height:auto !important;
+    width: 35vw !important;
 }
 #vis {
     position:absolute;
