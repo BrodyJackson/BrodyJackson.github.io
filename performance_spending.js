@@ -24,7 +24,7 @@ function setupCanvas(){
         // .attr("width", "1700")
         // .attr("height", "1000")
         .attr("viewBox", "0 0 1700 1000")
-        .attr("preserveAspectRatio","xMinYMin meet")
+        .attr("preserveAspectRatio","xMinYMin meet");
         // .attr("overflow", "visible")
         // .attr("transform", function(hex) {
         //     return "translate(" + 500 + "," + 0 + ")";
@@ -87,7 +87,7 @@ function alterspiderchart(team, index){
     var myChart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: ['Best Finish', 'Worst Finish', 'Usual Finish', 'Points', 'Goal Differential', "Top 4 Finishes", "League Titles", "Times Relegated", "Years in League", "Player Arrivals(Hundred)", "Player Departures(hundreds)"],
+            labels: ['Best Finish', 'Worst Finish', 'Usual Finish', 'Points', 'Goal Differential', "Top 4 Finishes", "League Titles", "Times Relegated", "Years in League", "Player Arrivals(Hundreds)", "Player Departures(Hundreds)"],
             datasets: [{
                 label: "League Averages",
                 backgroundColor: 'rgba(4,245,255,0.1)',
@@ -102,17 +102,22 @@ function alterspiderchart(team, index){
         options: {
             legend: {
                 position: 'top',
+                labels:{
+                    fontSize: 30,
+                }
+
             },
             title: {
                 display: true,
-                text: 'Team Performance VS League Averages'
+                text: 'Team Performance VS League Averages',
+                fontSize:30
             },
             scale: {
                 ticks: {
                     beginAtZero: true
                 },
-                scaleLabel: {
-                    pointLabelFontSize:300
+                pointLabels: {
+                    fontSize:30
                 }
             },
 
@@ -214,23 +219,23 @@ function drawRectangles(hexjson){
 
         let teamLogo = svgCanvas.append("svg:image")
             .attr("id", `innerimage${i}`)
-            .attr("width",200)
+            .attr("width",100)
             // .attr("height",200)
-            .attr('x', 470)
-            .attr('y', 100)
+            .attr('x', 525)
+            .attr('y', -110)
             .attr("xlink:href", "./images/" + teams[i].name + ".svg")
             .attr("opacity", "0");
 
-        let connection = svgCanvas.append("line")
-            .attr("x1", elementX)
-            .attr("y1", elementY)
-            .attr("x2", teams[i].topleftx )
-            .attr("y2", teams[i].toplefty + (teams[i].radius * 2))
-            .attr("visibility", "hidden")
-            .attr("id", `line${i}`)
-            // .text(teams[i].name)
-            .attr("stroke", "#38003c")
-            .attr("stroke-dasharray", 15);
+        // let connection = svgCanvas.append("line")
+        //     .attr("x1", elementX)
+        //     .attr("y1", elementY)
+        //     .attr("x2", teams[i].topleftx )
+        //     .attr("y2", teams[i].toplefty + (teams[i].radius * 2))
+        //     .attr("visibility", "hidden")
+        //     .attr("id", `line${i}`)
+        //     // .text(teams[i].name)
+        //     .attr("stroke", "#38003c")
+        //     .attr("stroke-dasharray", 15);
 
         // getAverageResults(team[i]);
 
