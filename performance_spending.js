@@ -31,7 +31,7 @@ function setupCanvas(){
         //  });
 
 
-    //draw the circles 
+    //draw the circles
     mainCircle = svgCanvas.append("circle")
         .attr("id", "ball")
         .attr("cx", 575)
@@ -269,7 +269,7 @@ function setup(){
             let sizeScale = d3.scalePow()
                 .exponent(2)
                 .domain([0, d3.max(data, function(d) { return parseInt(d.averagepoints); })])
-                .range([20, 80]);
+                .range([3, 60]);
 
             //color scale code modified from Tutorial 5 sample template
             let colorScale = d3.scaleQuantize()
