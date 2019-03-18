@@ -31,7 +31,7 @@ function setupCanvas(){
         //  });
 
 
-
+    //draw the circles 
     mainCircle = svgCanvas.append("circle")
         .attr("id", "ball")
         .attr("cx", 575)
@@ -52,11 +52,9 @@ function setupCanvas(){
         .attr("fill", "none");
 }
 
-
+//calculate the point locations for scaled hexagons
 function calculateScaledPoints(hex, sizeScale){
     console.log(hex.points);
-
-
 
     let height = (Math.sqrt(3)/2);
     let radius = sizeScale(hex.averagepoints);
@@ -68,6 +66,7 @@ function calculateScaledPoints(hex, sizeScale){
     hex.topleftx = radius/2+xPoint - radius;
     hex.toplefty = -radius*height+yPoint + radius/4 - height;
 
+    //hexagon point algorithm resource found in references
     let newPoint = "";
     newPoint += parseInt(radius+xPoint)+","+parseInt(yPoint);
     newPoint += " "+parseInt(radius/2+xPoint)+","+parseInt(radius*height+yPoint);
@@ -80,8 +79,9 @@ function calculateScaledPoints(hex, sizeScale){
     console.log("new scaled", newPoint);
     hex.radius = radius;
     hex.points = newPoint;
-
 }
+
+//generate the radar diagram for each team on hover to compare to league averages
 function alterspiderchart(team, index){
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -127,22 +127,7 @@ function alterspiderchart(team, index){
     console.log(team);
 }
 
-// function getAverageResults(team){
-//     let average = {
-//         bestfinish: 8.26,
-//         worstfinish: 906,
-//         usualfinish: 13.38,
-//         points: 46,
-//         goaldifferential: -11,
-//         top4: 2.12,
-//         top5to7: 1.55,
-//         titles: 0.5,
-//         relegated: 1.61,
-//         yearinleague: 10.86,
-//         playerarrivals: 550,
-//         playerdepartures: 540,
-//     }
-// }
+//draw the names around the outer circle and add hover methods, generate radar diagram on hover
 function drawRectangles(hexjson){
     let teams = hexjson.hexes;
     //magic numbers of circle x and y
@@ -237,7 +222,7 @@ function drawRectangles(hexjson){
         //     .attr("stroke", "#38003c")
         //     .attr("stroke-dasharray", 15);
 
-        // getAverageResults(team[i]);
+
 
 
     }
@@ -249,7 +234,7 @@ function setup(){
     d3.csv("stats_and_expenses.csv").then(function(data){
         //console.log(data);
         setupCanvas();
-        //
+
         // setupHexagons(data);
         d3.json("test2.hexjson").then(function(hexjson){
             console.log(hexjson);
@@ -267,9 +252,6 @@ function setup(){
                 .attr("overflow", "visible")
                 .append("g");
 
-
-
-
             // Render the hexes
             var hexes = d3.renderHexJSON(hexjson, width, height);
 
@@ -283,10 +265,11 @@ function setup(){
                     return "translate(" + 0 + "," + 20 + ")";
                 });
 
+            //create the size scale
             let sizeScale = d3.scalePow()
                 .exponent(2)
                 .domain([0, d3.max(data, function(d) { return parseInt(d.averagepoints); })])
-                .range([3, 60]);
+                .range([20, 80]);
 
             //color scale code modified from Tutorial 5 sample template
             let colorScale = d3.scaleQuantize()
@@ -309,9 +292,7 @@ function setup(){
                 //     // Selection.select("text").style({opacity:'1.0'});
                 // });
 
-
-
-
+            //add the team logo's to the hexagons
             hexmap.append("svg:image")
                 .attr("width",function(hex) {return hex.radius})
                 // .attr("height",200)
@@ -321,9 +302,8 @@ function setup(){
                     return "./images/" + hex.name + ".svg";
                 });
 
-
+            //draw the names around the outer circle
             drawRectangles(hexjson);
-
         });
     });
 
