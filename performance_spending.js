@@ -1,16 +1,13 @@
 /**
- * Call our functions on window load event
+ * Call setup function on window load event
  */
 window.onload = function(){
     setup();
 };
+
+
 /**
- * Global variables
- */
-var mainData;               // our visualization
-/**
- * Function setup: sets up our visualization environment.
- * You can change the code to not have static paths and elementID's
+ * Global variables used throughout
  */
 let hoverSafetyFlag = false;
 let goalsScale;
@@ -19,6 +16,7 @@ let successScale;
 let svgCanvas;
 let mainCircle;
 let outerCircle;
+//setup the initial canvas view
 function setupCanvas(){
     svgCanvas = d3.select("#vis")
         // .attr("width", "1700")
@@ -85,13 +83,12 @@ function setupCanvas(){
         .delay(500)
         .duration(5000)
         .ease(d3.easeLinear);
-
 }
 
 //calculate the point locations for scaled hexagons
 function calculateScaledPoints(hex, sizeScale){
     console.log(hex.points);
-
+    // adding 200 and 90 to x and y are magic numbers for positioning hexagons correctly
     let height = (Math.sqrt(3)/2);
     let radius = sizeScale(hex.averagepoints);
     console.log(hex.averagepoints + "averagepoints of " + hex.name);
