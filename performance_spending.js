@@ -36,12 +36,16 @@ function setupCanvas(){
         .attr("fill", "#ffffff");
 
     mainCircle
-        .attr("transform", "translate(0,-1500)")
+        //bounce transition removed for final submission due to bugs
+        // .attr("transform", "translate(0,-1500)")
+        // .transition()
+        // .attr("transform", "translate(0,0)")
+        .attr("opacity", 0)
         .transition()
-        .attr("transform", "translate(0,0)")
+        .attr("opacity", 1)
         .delay(500)
         .duration(5000)
-        .ease(d3.easeBounce);
+        .ease(d3.easeLinear);
 
     outerCircle = svgCanvas.append("circle")
         .attr("id", "filter")
@@ -71,12 +75,17 @@ function setupCanvas(){
         .attr("fill-opacity", "0");
 
     zoomCircle
-        .attr("transform", "translate(0,-1500)")
+        //bounce animation removed for final submission due to bugs
+        // .attr("transform", "translate(0,-1500)")
+        // .transition()
+        // .attr("transform", "translate(0,0)")
+        .attr("opacity", 0)
         .transition()
-        .attr("transform", "translate(0,0)")
+        .attr("opacity", 1)
         .delay(500)
         .duration(5000)
-        .ease(d3.easeBounce);
+        .ease(d3.easeLinear);
+
 }
 
 //calculate the point locations for scaled hexagons
@@ -430,12 +439,16 @@ function setup(){
                 });
 
             hexmap
-                .attr("transform", "translate(0,-1500)")
+                //bounce animation removed on final submission due to bugs
+                // .attr("transform", "translate(0,-1500)")
+                // .transition()
+                // .attr("transform", "translate(0,20)")
+                .attr("opacity", 0)
                 .transition()
-                .attr("transform", "translate(0,20)")
+                .attr("opacity", 1)
                 .delay(500)
-                .duration(5000)
-                .ease(d3.easeBounce);
+                .duration(3000)
+                .ease(d3.easeLinear);
 
 
             //create the size scale
